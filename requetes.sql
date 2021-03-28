@@ -1,1 +1,3 @@
-SELECT nom_recette FROM RECETTES
+SELECT nom_recette 
+  FROM RECETTES
+
