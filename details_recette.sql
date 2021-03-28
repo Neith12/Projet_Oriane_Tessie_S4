@@ -62,7 +62,7 @@ INSERT INTO `INGREDIENTS` ( `ID_INGREDIENT`, `NOM_INGREDIENT` )
 
 INSERT INTO `INTERNAUTES` (`ID_INTERNAUTE`,`NOM_INTERNAUTE` , `PRENOM_INTERNAUTE`, `AGE_INTERNAUTE`, `MAIL_INTERNAUTE`, `MDP_INTERNAUTE`,`PSEUDO_INTERNAUTE` )
 		VALUES
-			( '1', 'PORTE', 'Mathias', '25', 'mathias.porte@gmail.com', 'Jeu12', 'Mathias7' ),
+			( '1', 'DE VOLONTAT', 'Oriane', '19', 'orianevolontat@gmail.com', 'azert', 'Oriiiiane' ),
 			( '2', 'BOURGEOIS', 'Tessie', '19', 'tessie.bourgeois@gmail.com', 'Petitchien', 'Tess' )
 			;
 			
@@ -144,7 +144,7 @@ INSERT INTO `RECETTES` ( `ID_RECETTE`, `NOM_RECETTE`, `DATE_PUBLICATION_RECETTE`
 			( '7', 'Risotto aux champignons', '2021-03-27', '2', 2 ),
 			( '8', 'Hachis parmentier', '2021-03-27', '3', 2 ),
 			( '9', 'Linguine au poulet et au roquefort', '2021-03-27', '3', 2 ),
-			( '10', 'Pancakes aux fruit rouges', '2021-03-26', '3', 2)
+			( '10', 'Pancakes aux fruits rouges', '2021-03-26', '3', 2)
 			;
 			
 			
