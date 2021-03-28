@@ -2,10 +2,12 @@
 
 ---Simple-----
 ---Obtenir le nom des recettes:----
-SELECT nom_recette 
+SELECT 'nom_recette'
   FROM RECETTES
-  
-  
+----Obtenir le nombre d'ingredients----
+SELECT COUNT('id_ingredient') as nombre_ingredients
+FROM RECETTES
+
 ----Complexe avec jointure----
 ---Connaitre le nombre d'ingrédients dans chaque recette (nom)----
 
