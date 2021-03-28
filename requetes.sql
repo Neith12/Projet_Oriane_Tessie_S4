@@ -9,9 +9,15 @@ SELECT COUNT('id_ingredient') as nombre_ingredients
 FROM RECETTES
 
 ----Complexe avec jointure----
----Connaitre le nombre d'ingrédients dans chaque recette (nom)----
-
-
+---Dans la table "Recettes" Faire apparaitre nom-recette, nombre d'ingredient, nom_ingredient, nom_etapes----
+SELECT `nom_recette`, COUNT(`id_ingredient`), `nom_ingredient`, `contenu_etape`
+	FROM `RECETTES`
+			 JOIN `CONTENANT`
+				  ON `CONTENANT`.`id_recette` = `RECETTES`.`id_recette`
+				  ON `CONTENANT`.`id_etape` = `ETAPES`.`id_etape`
+			JOIN `UTILISATION`
+				ON `UTILISATION`.`id_ingredient` = `INGREDIENTS`.`id_ingredient`;
+			
 
 
 ------------------------Requetes de manipulation-----------------------
