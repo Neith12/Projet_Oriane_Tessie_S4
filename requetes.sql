@@ -16,7 +16,21 @@ SELECT `nom_recette`, COUNT(`id_ingredient`), `nom_ingredient`, `contenu_etape`
 				  ON `CONTENANT`.`id_recette` = `RECETTES`.`id_recette`
 				  ON `CONTENANT`.`id_etape` = `ETAPES`.`id_etape`
 			JOIN `UTILISATION`
-				ON `UTILISATION`.`id_ingredient` = `INGREDIENTS`.`id_ingredient`;
+				ON `UTILISATION`.`id_ingredient` = `INGREDIENTS`.`id_ingredient`
+				
+SELECT RECETTES.NOM_RECETTE, INGREDIENTS.ID_INGREDIENT, ETAPES.CONTENU_ETAPE
+
+	FROM RECETTES
+    
+			 JOIN CONTENANT
+				  ON CONTENANT.ID_RECETTE = RECETTES.ID_RECETTE
+                  
+             JOIN ETAPES
+				  ON CONTENANT.ID_ETAPE = ETAPES.ID_ETAPE
+                                    
+			JOIN INGREDIENTS
+            
+				ON UTILISATION.ID_INGREDIENT = INGREDIENTS.ID_INGREDIENT;
 			
 
 
