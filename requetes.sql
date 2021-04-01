@@ -1,3 +1,4 @@
+--Etape 1--
 ------------------------Requetes d'interrogation----------------------------------------------
 
 ---Simple-----
@@ -31,3 +32,8 @@ INSERT INTO `INTERNAUTES` (`ID_INTERNAUTE`,`NOM_INTERNAUTE` , `PRENOM_INTERNAUTE
 			( '2', 'BOURGEOIS', 'Tessie', '19', 'tessie.bourgeois@gmail.com', 'Petitchien', 'Tess' )
 			;
 ---------------------------------------------------------------------------------------------
+--Etape 2--
+--requetes monotables--
+-- requetes jointure--
+--requetes avec regroupement--
+--requêtes contenant des sous-requêtes--
