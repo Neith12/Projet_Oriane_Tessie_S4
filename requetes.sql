@@ -34,6 +34,11 @@ INSERT INTO `INTERNAUTES` (`ID_INTERNAUTE`,`NOM_INTERNAUTE` , `PRENOM_INTERNAUTE
 ---------------------------------------------------------------------------------------------
 --Etape 2--
 --requetes monotables--
+#Afficher toutes les recettes
+#Afficher toutes les categories
 -- requetes jointure--
+# Afficher les ingredients de toutes les recettes
+# Afficher les categories de toutes les recettes
 --requetes avec regroupement--
+#
 --requêtes contenant des sous-requêtes--
