@@ -40,5 +40,6 @@ INSERT INTO `INTERNAUTES` (`ID_INTERNAUTE`,`NOM_INTERNAUTE` , `PRENOM_INTERNAUTE
 # Afficher les ingredients de toutes les recettes
 # Afficher les categories de toutes les recettes
 --requetes avec regroupement--
-#
+#Afficher le nombre de recettes dans chaque catégorie
+#Afficher le nombre de recettes crées par chaque utlisateur
 --requêtes contenant des sous-requêtes--
