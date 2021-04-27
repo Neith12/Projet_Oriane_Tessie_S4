@@ -35,11 +35,32 @@ INSERT INTO `INTERNAUTES` (`ID_INTERNAUTE`,`NOM_INTERNAUTE` , `PRENOM_INTERNAUTE
 --Etape 2--
 --requetes monotables--
 #Afficher toutes les recettes
+SELECT * 
+FROM RECETTES;
+
 #Afficher toutes les categories
+SELECT * 
+FROM CATEGORIES;
+
 -- requetes jointure--
 # Afficher les ingredients de toutes les recettes
+SELECT ('nom_ingredient')
+FROM RECETTES
+LEFT JOIN id_ingredient ON IN RECETTES.id_ingredient = INGREDIENTS.id_ingredient;
+
 # Afficher les categories de toutes les recettes
+SELECT ('nom_categorie')
+FROM RECETTES
+FULL JOIN CATEGORIES ON  RECETTES.id_categorie = CATEGORIE.id_categorie;
+
 --requetes avec regroupement--
 #Afficher le nombre de recettes dans chaque catégorie
+SELECT [[RECETTES].nom_recette, Sum([RECETTES].id_recette) AS NombreRecette
+FROM [RECETTES]
+GROUP BY [RECETTES].nom_recette ;
+
 #Afficher le nombre de recettes crées par chaque utlisateur
+SELECT [[CATEGORIES].nom_recette, Sum([RECETTES].id_recette) AS NombreRecette
+FROM [RECETTES]
+GROUP BY [RECETTES].nom_recette ;
 --requêtes contenant des sous-requêtes--
